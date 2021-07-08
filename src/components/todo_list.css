@@ -1,0 +1,27 @@
+.header{
+    padding: 1% 0% 3% 42% ;
+    background-color: #87CEFA;
+}
+
+.task_btn{
+    background-color: darkblue;
+    color: white;
+    font-size: 20px;
+    border-radius: 8%;
+    padding: 1% 2% 1% 2%;
+    margin-left: 5%;
+}
+
+.title{
+    font-family: 'Fredericka the Great';
+    font-size: 50px;
+    color: #6A5ACD;
+    text-shadow: 2px 2px #483D8B;
+    font-weight: bolder;
+}
+
+.task_container{
+    background-color: #6495ED;
+    display: flex;
+    flex-wrap: wrap;
+}
