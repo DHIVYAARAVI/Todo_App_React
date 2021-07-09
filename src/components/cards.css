@@ -2,7 +2,12 @@
     width: 350px;
     height: 350px;
     margin: 0% 2% 2% 6%;
+    transition: transform .2s;
+}
+
+.card:hover{    
     box-shadow: 10px 10px #4169E1;
+    transform: scale(1.05);
 }
 
 .card-title, .card-text{
@@ -16,6 +21,14 @@
     padding-bottom: 3%;
 }
 
-.card-body{
-    border-top: 8px solid #6A5ACD;
+.card-title{
+    font-family: 'Cormorant Upright';
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.card-text{
+    font-family: 'Cormorant Upright';
+    font-size: 23px;
+    font-weight: bold; 
 }

@@ -7,26 +7,26 @@ export default function Cards({taskObj, index, taskDelete, updateListArray}) {
     const colors = [
         {
             primaryColor : "#5D93E1",
-            secondaryColor : "#ECF3FC"
+            secondaryColor : "#000080"
         },
         {
             primaryColor : "#F9D288",
-            secondaryColor : "#FEFAF1"
+            secondaryColor : "#00BFFF"
         },
         {
             primaryColor : "#5DC250",
-            secondaryColor : "#F2FAF1"
+            secondaryColor : "#8A2BE2"
         },
         {
             primaryColor : "#F48687",
-            secondaryColor : "#FDF1F1"
+            secondaryColor : "#FF1493"
         },
         {
             primaryColor : "#B964F7",
-            secondaryColor : "#F3F0FD"
+            secondaryColor : "#FF00FF"
         }
     ]
-
+    
     const handleDelete = () => {
         taskDelete(index)
     }
@@ -39,14 +39,16 @@ export default function Cards({taskObj, index, taskDelete, updateListArray}) {
 
     return (
         <div className="card">
-            <div className="card-body">
+            <div className="card-body" style={{borderTop: `6px solid ${colors[index%5].secondaryColor}` }}>
                 <h4 className="card-title mb-3">{taskObj.Name}</h4>
                 <p className="card-text" style={{height: "75%"}}>{taskObj.Description}</p>
             </div>
             <div className="font_awesome">
-                <i class="fa fa-edit" style={{fontSize: "24px", marginRight: "10px", color: "red" , cursor: "pointer" }}
+                <i class="fa fa-edit" style={{fontSize: "24px", marginRight: "10px", color: `${colors[index%5].secondaryColor}` , 
+                cursor: "pointer" }}
                 onClick={() => setModal(true)}></i>
-                <i class="fa fa-trash-o" style={{fontSize: "24px", cursor: "pointer"}} onClick={handleDelete}></i>
+                <i class="fa fa-trash-o" style={{fontSize: "24px", color: `${colors[index%5].secondaryColor}` ,
+                cursor: "pointer"}} onClick={handleDelete}></i>
             </div>
             <EditTask modal={modal} toggle={toggle} taskObj={taskObj} updateTask={updateTask}/>
         </div>

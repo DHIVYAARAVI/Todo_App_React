@@ -21,6 +21,7 @@
 }
 
 .task_container{
+    padding-top: 5%;
     background-color: #6495ED;
     display: flex;
     flex-wrap: wrap;
