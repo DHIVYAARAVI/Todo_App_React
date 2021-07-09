@@ -6,23 +6,18 @@ export default function Cards({taskObj, index, taskDelete, updateListArray}) {
     const [modal, setModal] = useState(false)
     const colors = [
         {
-            primaryColor : "#5D93E1",
             secondaryColor : "#000080"
         },
         {
-            primaryColor : "#F9D288",
             secondaryColor : "#00BFFF"
         },
         {
-            primaryColor : "#5DC250",
             secondaryColor : "#8A2BE2"
         },
         {
-            primaryColor : "#F48687",
             secondaryColor : "#FF1493"
         },
         {
-            primaryColor : "#B964F7",
             secondaryColor : "#FF00FF"
         }
     ]
